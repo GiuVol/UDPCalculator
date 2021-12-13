@@ -84,7 +84,7 @@ int main(int argc, char *argv[]) {
 	}
 
 	memset(&serverAddress, 0, sizeof(serverAddress));
-	serverAddress.sin_family = PF_INET;
+	serverAddress.sin_family = AF_INET;
 	serverAddress.sin_port = htons(port);
 	serverAddress.sin_addr.s_addr = address;
 
