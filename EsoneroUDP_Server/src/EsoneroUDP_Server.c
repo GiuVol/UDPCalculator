@@ -147,8 +147,8 @@ void handleConnection(int serverSocket){
 
 void executeOperation(char operator, int firstOperand, int secondOperand, struct serverAnswer* result){
 
-	result->success = htonl(1);
 	strcpy(result->message, "");
+	result->success = htonl(1);
 
 	switch(operator){
 		case ADDOPERATOR:
